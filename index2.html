@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking accounts Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+   
+    <header>
+        <h1 class="text-xl, text-center mt-16">Wellcome to accounts system <span class="font-semibold text-blue-600">with website</span>!!</h1>
+    </header>
+    <!-- Balance section part -->
+    <section class="mt-8 ">
+        <main class="grid grid-cols-3 mx-16 gap-4 w-3/4 text-white">
+           <div class="bg-blue-300 rounded p-8" >
+             <h2 class="text-2xl">Deposite</h2>
+             <h2 class="text-3xl">$00</h2>
+            </div> 
+           <div class="bg-yellow-400 rounded p-8" >
+             <h2 class="text-2xl">WithDrow</h2>
+             <h2 class="text-3xl">$00</h2>
+            </div> 
+           <div class="bg-green-300 rounded p-8" >
+             <h2 class="text-2xl">Balance</h2>
+             <h2 class="text-3xl">$1340</h2>
+            </div> 
+        </main>
+    </section>
+    <!-- Deposite and withdrow  -->
+    <section class="mt-8">
+        <div class="grid mx-16 grid-cols-2">
+            <div class="p-8 gap-4 bg-gray-200 rounded">
+                <h2 class="text-2xl mb-4">Pleace Deposite</h2>
+                <input  id="deposite-input" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="password"
+                placeholder="Type your password">
+        
+                <button id="deposite-button" class="border px-4 py-2 text-white font-medium rounded block bg-yellow-600">click</button>
+            </div>
+            <div class="p-8 gap-4 mx-5 bg-green-300 rounded">
+                <h2 class="text-2xl mb-4">Pleace withdrow</h2>
+                <input id="withdrow-input" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="password"
+                placeholder="Type your amount">
+        
+                <button id="withdrow-button" class="border px-4 py-2 text-white font-medium rounded block bg-yellow-600">click</button>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
