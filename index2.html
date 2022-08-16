@@ -17,16 +17,16 @@
     <section class="mt-8 ">
         <main class="grid grid-cols-3 mx-16 gap-4 w-3/4 text-white">
            <div class="bg-blue-300 rounded p-8" >
-             <h2 class="text-2xl">Deposite</h2>
-             <h2 class="text-3xl">$00</h2>
+             <h2  class="text-2xl">Deposite</h2>
+             <h2  class="text-3xl">$<span id="depositeTotal">00</span></h2>
             </div> 
            <div class="bg-yellow-400 rounded p-8" >
              <h2 class="text-2xl">WithDrow</h2>
-             <h2 class="text-3xl">$00</h2>
+             <h2 class="text-3xl">$<span id="withdrow">00</span></h2>
             </div> 
            <div class="bg-green-300 rounded p-8" >
              <h2 class="text-2xl">Balance</h2>
-             <h2 class="text-3xl">$1340</h2>
+             <h2 class="text-3xl">$<span id="balance">1250</span></h2>
             </div> 
         </main>
     </section>
@@ -34,22 +34,22 @@
     <section class="mt-8">
         <div class="grid mx-16 grid-cols-2">
             <div class="p-8 gap-4 bg-gray-200 rounded">
-                <h2 class="text-2xl mb-4">Pleace Deposite</h2>
-                <input  id="deposite-input" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="password"
-                placeholder="Type your password">
+                <h2  class="text-2xl mb-4">Pleace Deposite</h2>
+                <input  id="deposite-input" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text"
+                placeholder="$write your Deposite">
         
                 <button id="deposite-button" class="border px-4 py-2 text-white font-medium rounded block bg-yellow-600">click</button>
             </div>
             <div class="p-8 gap-4 mx-5 bg-green-300 rounded">
                 <h2 class="text-2xl mb-4">Pleace withdrow</h2>
-                <input id="withdrow-input" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="password"
-                placeholder="Type your amount">
+                <input id="withdrow-input" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text"
+                placeholder="$write your amount">
         
                 <button id="withdrow-button" class="border px-4 py-2 text-white font-medium rounded block bg-yellow-600">click</button>
             </div>
 
         </div>
     </section>
-
+<script src="js/banking.js" ></script>
 </body>
 </html>
