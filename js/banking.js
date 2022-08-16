@@ -33,21 +33,38 @@ function(){
     const newWithdrow =parseFloat(withdrowAmount);
 
     console.log(newWithdrow);
+    withdrowInput.value=' ';
+    if(isNaN(newWithdrow)){
+        alert('pleace provide a valid number')
+        return;
+    }
      
     // set withdrow total
     const withdrowTotal =document.getElementById('withdrow');
     const previouswithdrow=withdrowTotal.innerText;
     const previouswithdrowTotal=parseFloat(previouswithdrow);
-
     const newWithdrowtotal =previouswithdrowTotal + newWithdrow;
     withdrowTotal.innerText=newWithdrowtotal;
+  
+
+
 // update balance
 const balanceText =document.getElementById('balance');
 const balanceTotal=balanceText.innerText;
 const balanceTotals=parseFloat(balanceTotal);
 const newBalanceTotals=balanceTotals - newWithdrow;
 balanceText.innerText=newBalanceTotals;
-    // clear withdrow input
 
-    withdrowInput.value=' ';
+    // clear withdrow input
+  
+
+    if(newWithdrowtotal > newBalanceTotals){
+       alert('current balance is not availavle')
+       return;
+    } 
+    
+   
+
+
+    
 })
